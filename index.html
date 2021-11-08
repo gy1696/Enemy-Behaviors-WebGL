@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1080 height=1620></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,9 +29,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Enemy Behaviors WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Enemy Behaviors WebGL.data.gz",
-        frameworkUrl: buildUrl + "/Enemy Behaviors WebGL.framework.js.gz",
-        codeUrl: buildUrl + "/Enemy Behaviors WebGL.wasm.gz",
+        dataUrl: buildUrl + "/Enemy Behaviors WebGL.data",
+        frameworkUrl: buildUrl + "/Enemy Behaviors WebGL.framework.js",
+        codeUrl: buildUrl + "/Enemy Behaviors WebGL.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Enemy Behaviors",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1080px";
+        canvas.style.height = "1620px";
       }
       loadingBar.style.display = "block";
 
